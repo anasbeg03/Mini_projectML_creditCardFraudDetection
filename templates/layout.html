@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}FraudShield{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">FraudShield</a>
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Home</a>
+        <a class="nav-item nav-link" href="/predict">Predict</a>
+        <a class="nav-item nav-link" href="/about">About</a>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>
+<!--     <p class="lead">Detect fraudulent credit card transactions using machine learning.</p>
+ -->
+</html>
+

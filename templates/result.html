@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block title %}Prediction Result{% endblock %}
+{% block content %}
+<div class="alert alert-info">
+    <h4>Prediction Result</h4>
+    <p><strong>Algorithm Used:</strong> {{ algorithm }}</p>
+    <p><strong>Prediction:</strong> <span class="text-{{ 'danger' if label == 'Fraud' else 'success' }}">{{ label }}</span></p>
+</div>
+<a href="/predict" class="btn btn-secondary">Try Another</a>
+{% endblock %}
